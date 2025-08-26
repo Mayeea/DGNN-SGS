@@ -1,18 +1,18 @@
 
 
-## 环境配置
+## Environment Setup
 
-### 硬件环境
+### Hardware
 - **GPU**: RTX 4090 (24GB) * 1
 - **CPU**: 16 vCPU Intel(R) Xeon(R) Platinum 8358P CPU @ 2.60GHz
 - **内存**: 120GB
 
-### 软件环境
+### Software
 - **PyTorch**: 2.1.0
 - **Python**: 3.10 (ubuntu22.04)
 - **CUDA**: 12.1
 
-### 依赖安装
+### Dependencies
 
 ```bash
 pip install torch==2.1.0
@@ -25,36 +25,35 @@ pip install scipy
 pip install networkx
 ```
 
-## 数据集
+## Datasets
+This project supports the following datasets:
 
-本项目支持以下数据集：
-
-### 引用网络数据集
+### Citation Networks
 - **Citeseer**: https://github.com/tkipf/pygcn
 - **PubMed**: https://github.com/mengzaiqiao/CAN
 
-### 社交网络数据集
+### Social Networks
 - **UAI2010**: http://linqs.umiacs.umd.edu/projects//projects/lbc/index.html
 
-### 学术网络数据集
+### Academic Networks
 - **ACM**: https://github.com/Jhy1993/HAN
 
-### 博客网络数据集
+### Blog Networks
 - **BlogCatalog**: https://github.com/mengzaiqiao/CAN
 
-### 图片标注数据集
+### Image Annotation
 - **Flickr**: https://github.com/mengzaiqiao/CAN
 
-### 蛋白质网络数据集
+### Protein Networks
 - **CoraFull**: https://github.com/abojchevski/graph2gauss/
 
 
 
-## 使用方法
+## Usage
 
-### 2. 配置设置
+### 2. Configuration
 
-在 `config/` 目录下创建相应的配置文件，例如 `60citeseer.ini`：
+Create the corresponding configuration file under the config/ directory, e.g., 60citeseer.ini:
 
 ```ini
 [Model_Setup]
